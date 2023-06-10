@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import RollerCoaster from '@/components/icons/RollerCoaster'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className='flex p-3'>
-           <Link href={"/"} className='font-bold'>CodeCrafters</Link>
+           <Link href={"/"} className='font-bold flex gap-1 items-center'>
+              CodeCrafters
+              <RollerCoaster className="w-8 h-8 fill-white"/>
+            </Link>
         </header>
         {children}
       </body>
