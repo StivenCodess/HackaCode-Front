@@ -3,7 +3,9 @@
 import Link from "next-intl/link";
 import { usePathname } from "next-intl/client";
 
-interface Props {}
+interface Props {
+  locale: string;
+}
 
 const LanguageButton: React.FC<Props> = ({ locale }) => {
   const pathname = usePathname();

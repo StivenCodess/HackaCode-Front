@@ -1,5 +1,7 @@
 import { SVGProps } from "react";
-interface Props {}
+interface Props {
+  className: string;
+}
 const RollerCoaster: React.FC<Props> = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

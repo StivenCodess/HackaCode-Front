@@ -7,6 +7,7 @@ import LanguageButton from "@/components/navBar/LanguageButton";
 
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { LayoutProps } from "@/interfaces/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,7 @@ export const metadata = {
   		It consists in managing a park of dirversions, sales, employees, clients, etc. ",
 };
 
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children, params }: LayoutProps) {
   const locale = useLocale();
 
   if (params.locale !== locale) {
