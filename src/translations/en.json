@@ -1,0 +1,10 @@
+{
+    "Home": {
+      "work": "We are working on it."
+    },
+    "Login":{
+      "username": "Username",
+      "password": "Password",
+      "loginButton": "Login"
+    }
+  }
