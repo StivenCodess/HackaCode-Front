@@ -1,24 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 interface Props {}
 
-const ThemeButton: React.FC<Props> = () => {
-	const [language, setlanguage] = useState("EN");
-
-	const handleClick = () => {
-		if (language === "EN") setlanguage("ES");
-		if (language === "ES") setlanguage("EN");
-	};
-
-	return (
-		<div className="flex w-9 h-8 bg-white rounded-lg">
-			<button onClick={handleClick} className="text-black w-full ">
-				<span>{language}</span>
-			</button>
-		</div>
-	);
+const LanguageButton: React.FC<Props> = () => {
+	return <div className="flex w-9 h-8 bg-white rounded-lg gap-3"></div>;
 };
 
-export default ThemeButton;
+export default LanguageButton;
