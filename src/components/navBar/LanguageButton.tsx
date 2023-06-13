@@ -1,12 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import Link from "next-intl/link";
+import { usePathname } from "next-intl/client";
 
 interface Props {}
 
-const LanguageButton: React.FC<Props> = () => {
-	return <div className="flex w-9 h-8 bg-white rounded-lg gap-3"></div>;
+const LanguageButton: React.FC<Props> = ({ locale }) => {
+	const pathname = usePathname();
+	console.log(locale);
+	return (
+		<div className="flex w-9 h-8 bg-white rounded-lg gap-3">
+			<Link href={pathname} locale={locale === "es" ? "en" : "es"} className="text-black">
+				{(locale === "es" ? "en" : "es").toUpperCase()}
+			</Link>
+		</div>
+	);
 };
 
 export default LanguageButton;
