@@ -6,7 +6,11 @@ const Login: React.FC<Props> = () => {
 	const loginMessages = useTranslations("Login");
 	return (
 		<main className="flex min-h-screen flex-col justify-center">
-			<LoginForm loginMessages={loginMessages}></LoginForm>
+			<LoginForm
+				usernameMessage={loginMessages("username")}
+				passwordMessage={loginMessages("password")}
+				buttonMessage={loginMessages("loginButton")}
+			></LoginForm>
 		</main>
 	);
 };
