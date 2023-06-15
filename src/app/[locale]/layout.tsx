@@ -1,11 +1,14 @@
 import "./globals.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Inter } from "next/font/google";
+import { config } from "@fortawesome/fontawesome-svg-core";
 
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { LayoutProps } from "@/interfaces/Layout";
 
 import Header from "@/components/Header/Header";
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
