@@ -9,7 +9,7 @@ interface Props {
 
 const InputForm: React.FC<Props> = ({ locale }) => {
 	return (
-		<header className="flex p-3 justify-between items-center">
+		<header className="flex p-3 justify-between items-center absolute w-screen">
 			<div>
 				<Link href="/" className="font-bold flex gap-2 items-center px-7 text-lg">
 					CodeCrafters
