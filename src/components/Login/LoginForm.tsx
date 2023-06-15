@@ -1,5 +1,6 @@
 "use client";
 
+import RollerCoaster from "../icons/RollerCoaster";
 import InputForm from "./InputForm";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
@@ -24,8 +25,9 @@ const LoginForm: React.FC<Props> = ({
 		<form
 			onSubmit={handleSubmit(onSubmit)}
 			action=""
-			className="bg-white mx-auto flex flex-col rounded-lg p-8 gap-4"
+			className="bg-white mx-auto flex flex-col items-center rounded-lg p-8 pb-10 gap-4"
 		>
+			<RollerCoaster className="w-24 h-24 m-6 hover:scale-110 transition-all " />
 			<InputForm
 				inputType="text"
 				inputID="username"
@@ -38,7 +40,7 @@ const LoginForm: React.FC<Props> = ({
 				message={passwordMessage}
 				registerFunction={register}
 			></InputForm>
-			<button type="submit" className="bg-slate-500 text-white rounded-sm py-2">
+			<button type="submit" className="bg-slate-500 text-white rounded-sm py-2 w-full">
 				{buttonMessage}
 			</button>
 		</form>
