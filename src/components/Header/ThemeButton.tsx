@@ -9,14 +9,8 @@ interface Props {}
 
 const ThemeButton: React.FC<Props> = () => {
 	const { theme, setTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
 
 	const handleClick = () => {
-		if (!theme) setTheme("light");
 		if (theme === "dark") {
 			setTheme("light");
 		} else {
