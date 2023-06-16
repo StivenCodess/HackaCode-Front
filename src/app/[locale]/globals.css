@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
 	--background-color1: #f4ccff;
 	--background-color2: #88a1fb;
 }
@@ -28,4 +28,4 @@ body {
 		var(--background-color2) 0%,
 		var(--background-color1) 100%
 	);
-}
+} */
