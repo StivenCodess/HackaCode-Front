@@ -28,7 +28,10 @@ export default function RootLayout({ children, params }: LayoutProps) {
 
 	return (
 		<html lang={locale}>
-			<body className={inter.className}>
+			<body
+				className="bg-gradient-to-b from-[#f4ccff] to-[#88a1fb]
+					dark:from-[#424ea2] dark:to-[#7540b2]"
+			>
 				<Providers>
 					<Header locale={locale}></Header>
 					{children}
