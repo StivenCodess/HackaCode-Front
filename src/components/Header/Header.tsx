@@ -11,7 +11,11 @@ const InputForm: React.FC<Props> = ({ locale }) => {
 	return (
 		<header className="flex p-3 justify-between items-center absolute w-screen">
 			<div>
-				<Link href="/" className="font-bold flex gap-2 items-center px-7 text-lg">
+				<Link
+					href="/"
+					className="font-bold flex gap-2 items-center px-7 text-lg text-white
+								hover:scale-105 transition-all"
+				>
 					CodeCrafters
 					<RollerCoaster className="w-9 h-9 fill-white mb-1" />
 				</Link>
