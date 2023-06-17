@@ -7,7 +7,7 @@ interface Props {}
 const Login: React.FC<Props> = () => {
 	const loginMessages = useTranslations("Login");
 	return (
-		<main className="flex min-h-screen flex-col justify-center">
+		<main className="flex min-h-screen flex-col justify-center overflow-hidden">
 			<CloudWrap></CloudWrap>
 			<LoginForm
 				usernameMessage={loginMessages("username")}
