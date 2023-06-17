@@ -25,7 +25,7 @@ const LoginForm: React.FC<Props> = ({
 		<form
 			onSubmit={handleSubmit(onSubmit)}
 			action=""
-			className="z-20 bg-white mx-auto flex flex-col items-center rounded-lg p-10 pb-10 gap-4 shadow-lg"
+			className="animate-slide-in-bottom z-20 bg-white mx-auto flex flex-col items-center rounded-lg p-10 pb-10 gap-4 shadow-lg"
 		>
 			<RollerCoaster className="w-24 h-24 m-6 hover:scale-110 transition-all " />
 			<InputForm
