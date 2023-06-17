@@ -9,7 +9,6 @@ import { LayoutProps } from "@/interfaces/Layout";
 import Header from "@/components/Header/Header";
 import Providers from "./providers";
 config.autoAddCss = false;
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -28,10 +27,7 @@ export default function RootLayout({ children, params }: LayoutProps) {
 
 	return (
 		<html lang={locale}>
-			<body
-				className="bg-gradient-to-b from-[#f4ccff] to-[#88a1fb]
-					dark:from-[#424ea2] dark:to-[#7540b2]"
-			>
+			<body className=" bg-gradient-to-b from-[#f4ccff] to-[#88a1fb] dark:from-[#424ea2] dark:to-[#7540b2]">
 				<Providers>
 					<Header locale={locale}></Header>
 					{children}
