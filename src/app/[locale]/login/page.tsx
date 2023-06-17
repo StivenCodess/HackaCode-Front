@@ -1,11 +1,14 @@
 import { useTranslations } from "next-intl";
 import LoginForm from "@/components/Login/LoginForm";
+import CloudWrap from "@/components/Login/CloudWrap";
+
 interface Props {}
 
 const Login: React.FC<Props> = () => {
 	const loginMessages = useTranslations("Login");
 	return (
 		<main className="flex min-h-screen flex-col justify-center">
+			<CloudWrap></CloudWrap>
 			<LoginForm
 				usernameMessage={loginMessages("username")}
 				passwordMessage={loginMessages("password")}
