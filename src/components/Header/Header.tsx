@@ -7,14 +7,14 @@ interface Props {
 	locale: string;
 }
 
-const InputForm: React.FC<Props> = ({ locale }) => {
+const Header: React.FC<Props> = ({ locale }) => {
 	return (
 		<header className="flex p-3 justify-between items-center absolute w-screen">
 			<div>
 				<Link
 					href="/"
 					className="font-bold flex gap-2 items-center px-7 text-lg text-white
-								hover:scale-105 transition-all"
+								hover:scale-105 transition-all drop-shadow-lg hover:drop-shadow-xl cursor-pointer"
 				>
 					CodeCrafters
 					<RollerCoaster className="w-9 h-9 fill-white mb-1" />
@@ -28,4 +28,4 @@ const InputForm: React.FC<Props> = ({ locale }) => {
 	);
 };
 
-export default InputForm;
+export default Header;
