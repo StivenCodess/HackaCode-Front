@@ -25,7 +25,7 @@ const LoginForm: React.FC<Props> = ({
 		<form
 			onSubmit={handleSubmit(onSubmit)}
 			action=""
-			className="bg-white mx-auto flex flex-col items-center rounded-lg p-10 pb-10 gap-4"
+			className="z-20 bg-white mx-auto flex flex-col items-center rounded-lg p-10 pb-10 gap-4 shadow-lg"
 		>
 			<RollerCoaster className="w-24 h-24 m-6 hover:scale-110 transition-all " />
 			<InputForm
@@ -42,7 +42,8 @@ const LoginForm: React.FC<Props> = ({
 			></InputForm>
 			<button
 				type="submit"
-				className="bg-slate-500 text-white rounded-sm py-2 w-full transition-all hover:bg-[#88a1fb] hover:text-black"
+				className="bg-slate-500 text-white rounded-sm py-2 w-full transition-all
+				hover:bg-[#88a1fb] hover:text-black hover:scale-[1.03] duration-500"
 			>
 				{buttonMessage}
 			</button>
