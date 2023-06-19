@@ -92,6 +92,26 @@ module.exports = {
 						opacity: "0.1",
 					},
 				},
+				"slide-in-top": {
+					"0%": {
+						transform: "translateY(-1000px)",
+						opacity: "0",
+					},
+					"100%": {
+						transform: "translateY(0)",
+						opacity: "1",
+					},
+				},
+				"slide-out-top": {
+					"0%": {
+						transform: "translateY(0)",
+						opacity: "1",
+					},
+					"100%": {
+						transform: "translateY(-1000px)",
+						opacity: "0",
+					},
+				},
 			},
 			animation: {
 				"puff-in-center":
@@ -111,6 +131,10 @@ module.exports = {
 					"slide-in-blurred-bottom 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.2s backwards",
 				"slide-in-blurred-bottom-2":
 					"slide-in-blurred-bottom-less-opa 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.2s backwards",
+				"slide-in-top":
+					"slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards",
+				"slide-out-top":
+					"slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both",
 			},
 		},
 	},
