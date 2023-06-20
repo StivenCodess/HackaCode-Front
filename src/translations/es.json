@@ -6,5 +6,11 @@
       "username": "Usuario",
       "password": "Contraseña",
       "loginButton": "Iniciar Sesion"
+    },
+    "Welcome":{
+      "header": "Parque de Diversiones CodeCrafters",
+      "message": "Bienvenido! ✨ Muchas gracias por dejarnos ser parte de esta edicion de",
+      "by": "por",
+      "messageContinue": "Elegimos un diseño simple, minimalista y facil de usar. Tenemos modo oscuro y un sistema de traduccion."
     }
   }

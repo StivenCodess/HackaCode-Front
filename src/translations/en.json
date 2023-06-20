@@ -6,5 +6,11 @@
       "username": "Username",
       "password": "Password",
       "loginButton": "Login"
+    },
+    "Welcome":{
+      "header": "CodeCrafters amusement park page.",
+      "message": "Welcome! ✨ Thank you very much for letting us be part of this edition of",
+      "by": "by",
+      "messageContinue": "We chose a simple, minimalist and user-friendly design. We have a dark mode and a translation system."
     }
   }
