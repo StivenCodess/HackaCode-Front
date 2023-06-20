@@ -13,11 +13,11 @@ const Header: React.FC<Props> = ({ locale }) => {
 			<div>
 				<Link
 					href="/"
-					className="font-bold flex gap-2 items-center px-7 text-lg text-white
-								hover:scale-105 transition-all drop-shadow-lg hover:drop-shadow-xl cursor-pointer"
+					className="font-bold flex gap-2 items-center px-7 text-lg text-black
+								hover:scale-105 transition-all drop-shadow-lg hover:drop-shadow-xl cursor-pointer dark:text-white"
 				>
 					CodeCrafters
-					<RollerCoaster className="w-9 h-9 fill-white mb-1" />
+					<RollerCoaster className="w-9 h-9 mb-1 fill-black dark:fill-white" />
 				</Link>
 			</div>
 			<div className="px-7 flex gap-3">
