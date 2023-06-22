@@ -7,6 +7,9 @@ module.exports = {
 	],
 	darkMode: "class",
 	theme: {
+		fontFamily: {
+			roboto: "var(--font-roboto)",
+		},
 		extend: {
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
