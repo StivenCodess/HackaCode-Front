@@ -1,8 +1,9 @@
 "use client";
 
 import RollerCoaster from "../icons/RollerCoaster";
-import InputForm from "./InputForm";
+import InputForm from "@/components/Form/InputForm";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import ButtonForm from "@/components/Form/ButtonForm";
 
 interface Props {
 	usernameMessage: string;
@@ -40,13 +41,7 @@ const LoginForm: React.FC<Props> = ({
 				message={passwordMessage}
 				registerFunction={register}
 			></InputForm>
-			<button
-				type="submit"
-				className="bg-slate-500 text-white rounded-sm py-2 w-full transition-all
-				hover:bg-[#88a1fb] hover:text-black hover:scale-[1.03] duration-500"
-			>
-				{buttonMessage}
-			</button>
+			<ButtonForm buttonMessage={buttonMessage} />
 		</form>
 	);
 };
