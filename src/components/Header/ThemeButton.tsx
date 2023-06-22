@@ -18,11 +18,11 @@ const ThemeButton: React.FC<Props> = () => {
 	};
 
 	return (
-		<div className="flex w-9 h-8 bg-white rounded-lg transition-all hover:bg-[#88a1fb]">
+		<div className="group flex w-9 h-8  rounded-lg transition-all duration-700 hover:bg-white">
 			<button onClick={handleClick} className=" w-full ">
 				<FontAwesomeIcon
 					icon={theme === "dark" ? faSun : faMoon}
-					className="w-3 text-black"
+					className="w-3 group-hover:text-black dark:text-white"
 				/>
 			</button>
 		</div>

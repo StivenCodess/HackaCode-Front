@@ -10,11 +10,11 @@ interface Props {
 const LanguageButton: React.FC<Props> = ({ locale }) => {
 	const pathname = usePathname();
 	return (
-		<div className="flex w-9 h-8 bg-white rounded-lg gap-3 items-center justify-center transition-all hover:bg-[#88a1fb]">
+		<div className="group flex w-9 h-8 rounded-lg gap-3 items-center justify-center transition-all duration-700 hover:bg-white">
 			<Link
 				href={pathname}
 				locale={locale === "es" ? "en" : "es"}
-				className="text-black font-semibold"
+				className="group-hover:text-black  dark:text-white font-medium"
 			>
 				{(locale === "es" ? "en" : "es").toUpperCase()}
 			</Link>
