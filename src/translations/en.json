@@ -7,6 +7,16 @@
       "password": "Password",
       "loginButton": "Login"
     },
+    "Client":{
+      "name":"Name",
+      "phone": "Phone",
+      "button": "Add client"
+    },
+    "Employee":{
+      "name":"Name",
+      "phone": "Phone",
+      "button": "Add Employee"
+    },
     "Welcome":{
       "header": "CodeCrafters amusement park page.",
       "message": "Welcome! ✨ Thank you very much for letting us be part of this edition of",

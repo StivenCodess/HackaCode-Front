@@ -7,6 +7,16 @@
       "password": "Contraseña",
       "loginButton": "Iniciar Sesion"
     },
+    "Client":{
+      "name":"Nombre",
+      "phone": "Telefono",
+      "button": "Agregar Cliente"
+    },
+    "Employee":{
+      "name":"Nombre",
+      "phone": "Telefono",
+      "button": "Agregar Empleado"
+    },
     "Welcome":{
       "header": "Parque de Diversiones CodeCrafters",
       "message": "Bienvenido! ✨ Muchas gracias por dejarnos ser parte de esta edicion de",
