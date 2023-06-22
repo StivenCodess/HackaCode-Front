@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import WelcomeHeader from "./WelcomeHeader";
 import WelcomeText from "./WelcomeText";
 
@@ -15,6 +15,11 @@ interface Props {
 const ModalWelcome: React.FC<Props> = ({ welcomeMessage, welcomeHeaderMessage }) => {
 	const [status, setStatus] = useState(true);
 	const [leave, setLeave] = useState(false);
+
+	useEffect(() => {
+		if (localStorage.getItem("welcome")) setStatus(false);
+		else localStorage.setItem("welcome", JSON.stringify(true));
+	}, []);
 
 	const handleClick = () => {
 		setLeave(true);
