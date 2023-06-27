@@ -21,14 +21,19 @@ const Header: React.FC<Props> = ({ locale }) => {
 					<RollerCoaster className="w-9 h-9 mb-1 fill-black dark:fill-white" />
 				</Link>
 			</div>
-			<ul className="flex gap-3 justify-center items-center font-light">
-				<li className="hover:bg-white transition-all duration-1000 p-2 rounded hover:text-black hover:underline">
-					<Link href="/client">Client</Link>
-				</li>
-				<li className="hover:bg-white transition-all duration-1000 p-2 rounded hover:text-black hover:underline">
-					<Link href="/employee">Employee</Link>
-				</li>
-			</ul>
+			<nav className="">
+				<ul className="flex gap-3 justify-center items-center font-light">
+					<li className="bg-white/60 px-3 p-1 transition-all duration-500 rounded hover:bg-[#88a1fb]/20 dark:hover:bg-[#f4ccff]/80 hover:scale-105 dark:text-black hover:text-black shadow-md">
+						<Link href="/client">Clients</Link>
+					</li>
+					<li className="bg-white/60 px-3 p-1 transition-all duration-500 hover:scale-105 rounded hover:bg-[#88a1fb]/20 dark:hover:bg-[#f4ccff]/80 dark:text-black hover:text-black shadow-md">
+						<Link href="/employee">Employees</Link>
+					</li>
+					<li className="bg-white/60 px-3 p-1 transition-all duration-500 hover:scale-105 rounded hover:bg-[#88a1fb]/20 dark:hover:bg-[#f4ccff]/80 dark:text-black hover:text-black shadow-md">
+						<Link href="/employee">Games</Link>
+					</li>
+				</ul>
+			</nav>
 			<div className="px-7 flex gap-3">
 				<LogOut />
 				<ThemeButton />

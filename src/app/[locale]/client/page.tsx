@@ -1,4 +1,5 @@
 import FormClient from "@/components/Clients/FormClient";
+import ArticleClient from "@/components/Clients/ArticleClient";
 import { useTranslations } from "next-intl";
 
 export default function ClientPage() {
@@ -9,11 +10,8 @@ export default function ClientPage() {
 		buttonMessage: clientTranslation("button"),
 	};
 	return (
-		<main className="flex justify-center items-center h-screen ">
-			<section className="bg-white rounded text-black">
-				<h3>Clients</h3>
-				<FormClient clientMessages={clientMessages} />
-			</section>
+		<main className="flex justify-center items-center h-screen">
+			<ArticleClient clientMessages={clientMessages} />
 		</main>
 	);
 }
